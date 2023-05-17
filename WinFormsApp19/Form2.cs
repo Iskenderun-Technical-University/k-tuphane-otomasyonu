@@ -22,11 +22,16 @@ namespace WinFormsApp19
         {
 
            
-            if (textBox2.Text != textBox3.Text)
+            if (textBox2.Text == textBox3.Text)
             {
                 SqlConnection cnn = new SqlConnection("Data Source=DESKTOP-TNITFUT;Initial Catalog=kürüphane;Integrated Security=True");
                 cnn.Open();
                 SqlCommand cmd = new SqlCommand("insert into kullanici values (@kullanici,@gmail,@sifre)", cnn);
+                SqlDataReader rdr = cmd.ExecuteReader();
+                if(rdr.Read())
+                {
+                    MessageBox.Show("d");
+                }
                 cmd.Parameters.AddWithValue("@kullanici", textBox1.Text);
                 cmd.Parameters.AddWithValue("@gmail", textBox2.Text);
                 cmd.Parameters.AddWithValue("@sifre", textBox3.Text);
@@ -35,7 +40,7 @@ namespace WinFormsApp19
                 cnn.Close();
 
             }
-            else if(textBox1.Text == textBox2.Text)
+            else if(textBox1.Text != textBox2.Text)
             {
                 MessageBox.Show("şifre aynı olmalıdır");
             }
