@@ -88,5 +88,11 @@ namespace WinFormsApp19
             adapter.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+        }
     }
 }
