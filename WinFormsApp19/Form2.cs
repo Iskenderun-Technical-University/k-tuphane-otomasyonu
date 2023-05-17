@@ -35,7 +35,11 @@ namespace WinFormsApp19
                 cnn.Close();
 
             }
-
+            else if(textBox1.Text == textBox2.Text)
+            {
+                MessageBox.Show("şifre aynı olmalıdır");
+            }
+            
 
         }
     }
