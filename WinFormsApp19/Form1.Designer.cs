@@ -42,22 +42,24 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(163, 335);
+            button1.BackColor = Color.GreenYellow;
+            button1.Location = new Point(12, 311);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
             button1.Text = "kayıt ol";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(43, 394);
+            button2.Location = new Point(96, 409);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 1;
@@ -67,7 +69,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(163, 394);
+            button3.Location = new Point(216, 409);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
             button3.TabIndex = 2;
@@ -77,7 +79,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(275, 394);
+            button4.Location = new Point(328, 409);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 3;
@@ -87,7 +89,7 @@
             // 
             // button5
             // 
-            button5.Location = new Point(163, 443);
+            button5.Location = new Point(216, 458);
             button5.Name = "button5";
             button5.Size = new Size(94, 29);
             button5.TabIndex = 4;
@@ -170,11 +172,23 @@
             textBox4.Size = new Size(125, 27);
             textBox4.TabIndex = 13;
             // 
+            // button6
+            // 
+            button6.BackColor = SystemColors.ActiveCaption;
+            button6.Location = new Point(216, 355);
+            button6.Name = "button6";
+            button6.Size = new Size(94, 29);
+            button6.TabIndex = 14;
+            button6.Text = "giriş yap";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(887, 497);
+            Controls.Add(button6);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
@@ -212,5 +226,6 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;
+        private Button button6;
     }
 }
