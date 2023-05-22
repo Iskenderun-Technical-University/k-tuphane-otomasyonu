@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
@@ -42,20 +41,8 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
-            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.GreenYellow;
-            button1.Location = new Point(12, 311);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "kayıt ol";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -172,23 +159,11 @@
             textBox4.Size = new Size(125, 27);
             textBox4.TabIndex = 13;
             // 
-            // button6
-            // 
-            button6.BackColor = SystemColors.ActiveCaption;
-            button6.Location = new Point(216, 355);
-            button6.Name = "button6";
-            button6.Size = new Size(94, 29);
-            button6.TabIndex = 14;
-            button6.Text = "giriş yap";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(887, 497);
-            Controls.Add(button6);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
@@ -202,7 +177,6 @@
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
             Name = "Form1";
             Text = "Form";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -211,8 +185,6 @@
         }
 
         #endregion
-
-        private Button button1;
         private Button button2;
         private Button button3;
         private Button button4;
@@ -226,6 +198,5 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;
-        private Button button6;
     }
 }

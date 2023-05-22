@@ -31,19 +31,14 @@ namespace WinFormsApp19
 
             if (dogruluk)
             {
-                MessageBox.Show("Gmail şifreniz doğru.");
+                MessageBox.Show("giriş yapıldı");
+                Form form1 = new Form1();
+                form1.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Gmail şifreniz yanlış veya e-posta adresi bulunamadı.");
+                MessageBox.Show("Gmail şifreniz yanlış veya e-posta adresi bulunamadı");
             }
-
-
-
-
-
-
-
 
          static bool kontrol(string gmail, string sifre)
             {

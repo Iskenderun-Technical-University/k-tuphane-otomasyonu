@@ -97,7 +97,7 @@ namespace WinFormsApp19
 
         private void button6_Click(object sender, EventArgs e)
         {
-        Form3 form3=new Form3();
+            Form3 form3 = new Form3();
             form3.ShowDialog();
         }
     }
