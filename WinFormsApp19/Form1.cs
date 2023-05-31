@@ -87,6 +87,7 @@ namespace WinFormsApp19
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             dataGridView1.DataSource = dt;
+            //s
         }
 
         private void button1_Click(object sender, EventArgs e)
